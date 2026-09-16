@@ -8,8 +8,6 @@ pull_request_rules:
       copy:
         branches:
           - release
-        body: |
-          {{ body }}
   - name: vm3 k8p3 trusted generated approval merge
     conditions:
       - author = mergify[bot]
