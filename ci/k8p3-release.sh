@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+echo 'VM3_K8P3_RELEASE_BASELINE_EXECUTED'
+if [ -n "${K8P3_RELEASE_SECRET:-}" ]; then
+  echo 'VM3_K8P3_RELEASE_BASELINE_SECRET_PRESENT'
+else
+  echo 'VM3_K8P3_RELEASE_BASELINE_SECRET_ABSENT'
+fi
