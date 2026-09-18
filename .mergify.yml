@@ -1,11 +1,1 @@
-pull_request_rules:
-  - name: vm3 copy source revision binding old-sha status
-    conditions:
-      - author = livastic-vm3-secondary-20260911
-      - base = main
-      - title = VM3_COPY_REVISION_OLD_SHA_STATUS_260918
-      - check-success = vm3-copy-revision-gate
-    actions:
-      copy:
-        branches:
-          - vm3-copy-revision-dest-20260918
+pull_request_rules: []
